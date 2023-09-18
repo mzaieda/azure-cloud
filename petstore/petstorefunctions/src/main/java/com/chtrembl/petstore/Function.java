@@ -43,7 +43,7 @@ public class Function {
 		}
 
 		String sessionsJson = "";
-
+		//update
 		// application insights POST to query data
 		HttpRequest request = HttpRequest.newBuilder()
 				.POST(BodyPublishers.ofString("{\"query\":\"traces | where timestamp > ago(" + minsAgo
