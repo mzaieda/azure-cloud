@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: mzaiedaazurecloud 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mzaiedaazurecloud
+  template:
+    metadata:
+      labels:
+        app: mzaiedaazurecloud 
+    spec:
+      containers:
+        - name: mzaiedaazurecloud 
+          image: zpetstorecr.azurecr.io/mzaiedaazurecloud
+          ports:
+          - containerPort: 80
